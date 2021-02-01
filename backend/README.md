@@ -2,7 +2,7 @@
 * Express
 * MongoDB
 
-## Build Docker Image => [Node](https://hub.docker.com/_/node/)
+## Build Docker Image => [Node](https://hub.docker.com/_/node/), working with [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 ```
 $cd backend
 $docker image build -t backend:0.1 .
