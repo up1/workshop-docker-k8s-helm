@@ -64,6 +64,29 @@ Delete all containers and networks
 $docker-compose down
 ```
 
+## Seeding data into MongoDB
+```
+$docker-compose -f docker-compose-seed-data.yml build
+$docker-compose -f docker-compose-seed-data.yml up -d mongo
+```
+
+Access to container
+```
+$docker-compose exec -T mongo bash
+>mongo localhost/mongo-test
+>db.getCollectionNames()
+>db.User.find();
+```
+Start backend container
+```
+$docker-compose -f docker-compose-seed-data.yml up -d backend
+```
+Access to `http://localhost:3000/api/users`
+
+Delete all containers and networks
+```
+$docker-compose -f docker-compose-seed-data.yml down
+```
 ## Working with Frontend
 * Nginx + reverse proxy
 

@@ -3,6 +3,7 @@ const app = express();
 const connectDatabase = require("./src/connection");
 const User = require("./src/user");
 port = 3000;
+// const a = 0;
 
 // const users = [];
 
@@ -12,6 +13,7 @@ app.get("/api/users", async (req, res) => {
   console.log("api/users called!");
   //   From MongoDB
   const users = await User.find();
+  console.log(users);
   res.json(users);
 });
 

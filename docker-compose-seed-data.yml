@@ -6,3 +6,5 @@ services:
       - 3000:3000
   mongo:
     build: ./database
+    environment: 
+      MONGO_INITDB_DATABASE: mongo-test
