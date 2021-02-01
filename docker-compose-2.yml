@@ -1,0 +1,10 @@
+version: "3"
+services:
+  backend:
+    build: ./backend
+  mongo:
+    image: mongo
+  frontend:
+    build: ./frontend
+    ports:
+      - 8888:80

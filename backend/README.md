@@ -63,3 +63,21 @@ Delete all containers and networks
 ```
 $docker-compose down
 ```
+
+## Working with Frontend
+* Nginx + reverse proxy
+
+```
+$cd fronend
+$docker image build -t fronend:0.1 .
+```
+
+Working with docker compose
+```
+$docker-compose -f docker-compose-2.yml build
+$docker-compose -f docker-compose-2.yml up -d mongo
+$docker-compose -f docker-compose-2.yml up -d backend
+$docker-compose -f docker-compose-2.yml up -d frontend
+```
+
+Access to `http://localhost/api/users`
