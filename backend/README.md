@@ -78,6 +78,7 @@ $docker-compose -f docker-compose-2.yml build
 $docker-compose -f docker-compose-2.yml up -d mongo
 $docker-compose -f docker-compose-2.yml up -d backend
 $docker-compose -f docker-compose-2.yml up -d frontend
+$docker-compose -f docker-compose-2.yml ps
 ```
 
 Access to `http://localhost/api/users`
