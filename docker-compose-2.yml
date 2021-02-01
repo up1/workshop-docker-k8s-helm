@@ -2,8 +2,10 @@ version: "3"
 services:
   backend:
     build: ./backend
+
   mongo:
-    image: mongo
+    build: ./database
+    
   frontend:
     build: ./frontend
     ports:
