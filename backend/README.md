@@ -40,7 +40,7 @@ $docker container logs backend --follow
 ```
 Access to `http://localhost:3000/api/users`
 
-## Working with MongoDB + Docker compose
+## Working with MongoDB + [Docker compose](https://docs.docker.com/compose/compose-file/compose-file-v3/)
 ```
 $cd ..
 $docker-compose build
