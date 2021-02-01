@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.11.14"
+    "mongoose": "^5.11.14",
+    "sonarqube-scanner": "^2.8.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
