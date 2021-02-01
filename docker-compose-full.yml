@@ -5,7 +5,9 @@ services:
 
   mongo:
     build: ./database
-    
+    environment: 
+      MONGO_INITDB_DATABASE: mongo-test
+
   frontend:
     build: ./frontend
     ports:
