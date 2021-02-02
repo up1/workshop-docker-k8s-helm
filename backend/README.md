@@ -2,7 +2,7 @@
 * Express
 * MongoDB
 
-## Build Docker Image => [Node](https://hub.docker.com/_/node/)
+## Build Docker Image => [Node](https://hub.docker.com/_/node/), working with [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 ```
 $cd backend
 $docker image build -t backend:0.1 .
@@ -40,7 +40,7 @@ $docker container logs backend --follow
 ```
 Access to `http://localhost:3000/api/users`
 
-## Working with MongoDB + Docker compose
+## Working with MongoDB + [Docker compose](https://docs.docker.com/compose/compose-file/compose-file-v3/)
 ```
 $cd ..
 $docker-compose build
@@ -64,6 +64,29 @@ Delete all containers and networks
 $docker-compose down
 ```
 
+## Seeding data into MongoDB
+```
+$docker-compose -f docker-compose-seed-data.yml build
+$docker-compose -f docker-compose-seed-data.yml up -d mongo
+```
+
+Access to container
+```
+$docker-compose exec -T mongo bash
+>mongo localhost/mongo-test
+>db.getCollectionNames()
+>db.User.find();
+```
+Start backend container
+```
+$docker-compose -f docker-compose-seed-data.yml up -d backend
+```
+Access to `http://localhost:3000/api/users`
+
+Delete all containers and networks
+```
+$docker-compose -f docker-compose-seed-data.yml down
+```
 ## Working with Frontend
 * Nginx + reverse proxy
 
@@ -78,6 +101,7 @@ $docker-compose -f docker-compose-2.yml build
 $docker-compose -f docker-compose-2.yml up -d mongo
 $docker-compose -f docker-compose-2.yml up -d backend
 $docker-compose -f docker-compose-2.yml up -d frontend
+$docker-compose -f docker-compose-2.yml ps
 ```
 
 Access to `http://localhost/api/users`
