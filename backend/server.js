@@ -4,6 +4,8 @@ const connectDatabase = require("./src/connection");
 const User = require("./src/user");
 port = 3000;
 
+const a = 2;
+
 // const users = [];
 
 app.use(express.json());
