@@ -6,7 +6,11 @@
 * [Database](https://github.com/up1/workshop-docker-k8s-helm/tree/main/database)
   * MongoDB
   
-  
+* Container Orchestration
+  * Docker Swarm
+  * Kubernetes
+  * Helm
+
 ## Start workshop
 ```
 $git clone https://github.com/up1/workshop-docker-k8s-helm.git
