@@ -7,7 +7,7 @@
   * MongoDB
   
 * Container Orchestration
-  * Docker Swarm
+  * [Docker Swarm](https://github.com/up1/workshop-docker-k8s-helm/wiki/Docker-Swarm)
   * Kubernetes
   * Helm
 
