@@ -1,9 +1,9 @@
 # Workshop :: Working with Docker, Kubernetes and Helm
-* Fronend
+* [Fronend](https://github.com/up1/workshop-docker-k8s-helm/tree/main/frontend)
   * ReactJS
 * [Backend](https://github.com/up1/workshop-docker-k8s-helm/tree/main/backend)
   * NodeJS + Express]
-* Database
+* [Database](https://github.com/up1/workshop-docker-k8s-helm/tree/main/database)
   * MongoDB
   
   
