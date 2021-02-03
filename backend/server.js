@@ -1,5 +1,7 @@
 const connectDatabase = require("./src/connection");
 const User = require("./src/user");
+const express = require("express")
+const app = express()
 port = 3000;
 
 // const users = [];
@@ -27,7 +29,7 @@ app.post("/api/user", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server listening on the port::${port}`);
 
-  // connectDatabase().then(() => {
-  //   console.log("MongoDb connected");
-  // });
+  connectDatabase().then(() => {
+    console.log("MongoDb connected");
+  });
 });
