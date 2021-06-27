@@ -13,19 +13,19 @@ Access to `http://localhost`
 
 ## Working with Docker compose
 ```
-$docker-compose -f docker-compose-full.yml build
+$docker-compose -f docker-compose-build.yml build
 
 // Start database
-$docker-compose -f docker-compose-full.yml up -d mongo
-$docker-compose -f docker-compose-full.yml ps
+$docker-compose -f docker-compose-build.yml up -d mongo
+$docker-compose -f docker-compose-build.yml ps
 
 // Start backend
-$docker-compose -f docker-compose-full.yml up -d backend
-$docker-compose -f docker-compose-full.yml ps
+$docker-compose -f docker-compose-build.yml up -d backend
+$docker-compose -f docker-compose-build.yml ps
 
 // Start frontend
-$docker-compose -f docker-compose-full.yml up -d frontend
-$docker-compose -f docker-compose-full.yml ps
+$docker-compose -f docker-compose-build.yml up -d frontend
+$docker-compose -f docker-compose-build.yml ps
 ```
 
 Access to `http://localhost:8888`
