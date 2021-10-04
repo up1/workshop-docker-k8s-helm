@@ -4,7 +4,7 @@ services:
     build: ./backend
 
   mongo:
-    build: ./database
+    build: ./mongodb
     user: "0:0"
     environment: 
       MONGO_INITDB_DATABASE: mongo-test

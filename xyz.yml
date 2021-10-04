@@ -11,7 +11,7 @@ services:
     image: somkiat/backend:0.1
 
   mongo:
-    build: ./database
+    build: ./mongodb
     image: somkiat/mongo:0.1
     container_name: mongo
     environment:
